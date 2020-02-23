@@ -8,6 +8,7 @@ Este proyecto representará una página web completa para un buscador de vuelos.
   - Buscador.
   - Blog.
   - Contacto.
+ 
  La página principal será la página index, la cual incluirá todas las demás anidadas en vertical.
  Para realizar dicho proyecto, utilizaré:
   - Visual Studio Code como IDE.

@@ -5,70 +5,76 @@
     <meta charset="utf8">
     <meta lang="es">
     <meta content="text/html">
-    <link rel = "stylesheet" type="text/css" href="./styles/login.css">
+    <link rel = "stylesheet" type="text/css" href="../styles/login.css">
   </head>
   <body>
-    <section class="user">
-      <div class="user_options-container">
-        <div class="user_options-text">
-          <div class="user_options-unregistered">
-            <h2 class="user_unregistered-title">Todavía no tienes cuenta ?</h2>
-            <p class="user_unregistered-text">
-              Registrarte apenas te llevará unos segundos y podrás acceder a ofertas exclusivas. Clicka en el botón de abajo y rellena el formulario que se te muestra.
+    <section class="seccionFormulario">
+      <div class="divGeneral">
+        <div class="texto_tiposUsuario">
+        <!-- Opciones para usuarios  NO registrados .-->
+          <div class="noRegistrado">
+            <h2 class="noRegistrado_titulo">¿ Todavía no tienes cuenta ?</h2>
+            <p class="noRegistrado_descripcion">
+              Registrarte apenas te llevará unos segundos y podrás acceder a ofertas exclusivas.
+              Clicka en el botón de abajo y rellena el formulario que se te muestra.
             </p>
-            <button class="user_unregistered-signup" id="signup-button">REGISTRARSE</button>
+            <button class="noRegistrado_opcion" id="boton_registro">NECESITO REGISTRARME</button>
           </div>
-    
-          <div class="user_options-registered">
-            <h2 class="user_registered-title">Ya tengo una cuenta.</h2>
-            <p class="user_registered-text">Si ya tienes una cuenta, clicka en el botón de abajo y rellena el formulario con tus credenciales para iniciar sesión.</p>
-            <button class="user_registered-login" id="login-button">INICIAR SESIÓN</button>
+        <!-- Opciones para usuarios registrados .-->
+          <div class="registrado">
+            <h2 class="registrado_titulo">Ya tengo una cuenta.</h2>
+            <p class="registrado_descripcion">Si ya tienes una cuenta, clicka en el botón de abajo y rellena el formulario con tus credenciales para iniciar sesión.</p>
+            <button class="registrado_opcion" id="boton_login">Quiero loguearme</button>
           </div>
         </div>
         
-        <div class="user_options-forms" id="user_options-forms">
+        <div class="divFormularios" id="user_options-forms">
         <!--FORMULARIO DE LOGIN-->
-          <div class="user_forms-login">
-            <h2 class="forms_title">Iniciar sesión.</h2>
-            <form class="forms_form">
-              <fieldset class="forms_fieldset">
-                <div class="forms_field">
-                  <input type="email" placeholder="Email" class="forms_field-input" required autofocus alt="Input para introducir email de usuario registrado."/> 
+          <div class="formulario_login">
+            <h2 class="titulo_formulario">Iniciar sesión.</h2>
+            <form>
+              <fieldset>
+                <div class="campos_formulario">
+                  <input type="email" placeholder="Email" class="campos_formulario-input" required autofocus alt="Input para introducir email de usuario registrado."/> 
                 </div>
-                <div class="forms_field">
-                  <input type="password" placeholder="Password" class="forms_field-input" required alt="Input para introducir contraseña de usuario registrado." />
+                <div class="campos_formulario">
+                  <input type="password" placeholder="Password" class="campos_formulario-input" required alt="Input para introducir contraseña de usuario registrado." />
                 </div>
               </fieldset>
-              <div class="forms_buttons">
-                <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-                <input type="submit" value="Log In" class="forms_buttons-action">
+              <div class="botones_formulario">
+                <button type="button" class="botones_formulario-forgot">Has olvidado tu contraseña?</button>
+                <input type="submit" value="Log In" class="botones_formulario-action">
               </div>
             </form>
           </div>
         <!--FORMULARIO DE REGISTRO.-->
-          <div class="user_forms-signup">
-            <h2 class="forms_title">Sign Up</h2>
-            <form class="forms_form">
-              <fieldset class="forms_fieldset">
-                <div class="forms_field">
-                  <input type="text" placeholder="Full Name" class="forms_field-input" required />
+          <div class="formulario_registro">
+            <h2 class="titulo_formulario">Registro</h2>
+            <form>
+              <fieldset>
+            <!--NOMBRE-->
+                <div class="campos_formulario">
+                  <input type="text" placeholder="Full Name" class="campos_formulario-input" required />
                 </div>
-                <div class="forms_field">
-                  <input type="email" placeholder="Email" class="forms_field-input" required />
+            <!-- EMAIL -->
+                <div class="campos_formulario">
+                  <input type="email" placeholder="Email" class="campos_formulario-input" required />
                 </div>
-                <div class="forms_field">
-                  <input type="password" placeholder="Password" class="forms_field-input" required />
+            <!-- OLVIDO CONTRASEÑA -->
+                <div class="campos_formulario">
+                  <input type="password" placeholder="Password" class="campos_formulario-input" required />
                 </div>
               </fieldset>
-              <div class="forms_buttons">
-                <input type="submit" value="Sign up" class="forms_buttons-action">
+            <!-- SUBMIT -->
+              <div class="botones_formulario">
+                <input type="submit" value="Sign up" class="botones_formulario-action">
               </div>
             </form>
           </div>
         </div>
       </div>
       <!--CARGAR SCRIPT CON ANIMACIONES.-->
-      <script src="./scripts/login.js"></script>
+      <script src="../scripts/login.js"></script>
+    </section>
   </body>
-  </section>
 </html>

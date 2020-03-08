@@ -1,22 +1,18 @@
 /**
  * Variables
  */
-const signupButton = document.getElementById('signup-button'),
-    loginButton = document.getElementById('login-button'),
+const signupButton = document.getElementById('boton_registro'),
+    loginButton = document.getElementById('boton_login'),
     userForms = document.getElementById('user_options-forms')
-
 /**
- * Add event listener to the "Sign Up" button
- */
+* Efectos de rebote
+*/
 signupButton.addEventListener('click', () => {
   userForms.classList.remove('reboteDerecha')
-  userForms.classList.add('bounceLeft')
+  userForms.classList.add('reboteIzquierda')
 }, false)
 
-/**
- * Add event listener to the "Login" button
- */
 loginButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceLeft')
+  userForms.classList.remove('reboteIzquierda')
   userForms.classList.add('reboteDerecha')
 }, false)

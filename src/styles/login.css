@@ -3,16 +3,11 @@
  * */
 @font-face { /*Primaria*/
   font-family: 'Overlock';
-  src: 
-  url('../fonts/overlock/Overlock-Regular.ttf'),
-  url('../fonts/overlock/Overlock-Bold.ttf'),
-  url('../fonts/overlock/Overlock-Black.ttf'),
+  src: url('../fonts/overlock/Overlock-Regular.ttf'), url('../fonts/overlock/Overlock-Bold.ttf'),url('../fonts/overlock/Overlock-Black.ttf');
 }
 @font-face {
   font-family: Oregano;
-  src: 
-  url('../fonts/oregano/Oregano-Regular.ttf'),
-  url('../fonts/oregano/Oregano-Italic.ttf.ttf'),
+  src: url('../fonts/oregano/Oregano-Regular.ttf'),url('../fonts/oregano/Oregano-Italic.ttf');
 }
 /**
  * * ATRIBUTOS MÁS GENERALES
@@ -271,7 +266,7 @@
   }
   
   /**
-   * * Responsive 990px
+   * * A partir de 990 px camboiar disposición de los items.
    * */
   @media screen and (max-width: 990px) {
     .divFormularios {
@@ -281,15 +276,37 @@
       flex-direction: column;
     }
     .divFormularios .formulario_login .botones_formulario-action {
-      margin-top: 30px;
+      margin-top: 1%;
     }
     .divFormularios .formulario_registro,
-  .divFormularios .formulario_login {
+    .divFormularios .formulario_login {
       top: 40px;
     }
-  
     .registrado,
-  .noRegistrado {
+    .noRegistrado {
+      padding: 50px 45px;
+    }
+  }
+
+  /**
+   * * A partir de 770 px - Tablet Ipad
+   * */
+   @media screen and (max-width: 990px) {
+    .divFormularios {
+      min-height: 350px;
+    }
+    .divFormularios .botones_formulario {
+      flex-direction: column;
+    }
+    .divFormularios .formulario_login .botones_formulario-action {
+      margin-top: 1%;
+    }
+    .divFormularios .formulario_registro,
+    .divFormularios .formulario_login {
+      top: 40px;
+    }
+    .registrado,
+    .noRegistrado {
       padding: 50px 45px;
     }
   }

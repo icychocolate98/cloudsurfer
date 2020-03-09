@@ -1,0 +1,245 @@
+ /**
+ * * FUENTES 
+ * */
+@font-face { /*Primaria*/
+    font-family: 'Overlock';
+    src: url('../fonts/overlock/Overlock-Regular.ttf'),
+     url('../fonts/overlock/Overlock-Bold.ttf'),
+     url('../fonts/overlock/Overlock-Black.ttf');
+}
+@font-face {
+    font-family: Oregano;
+    src: url('../fonts/oregano/Oregano-Regular.ttf'),
+    url('../fonts/oregano/Oregano-Italic.ttf');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;    
+    margin: 0;
+    overflow-x: hidden;
+}
+/*Planeando tamaños de letras, títulos, etc*/
+h1{
+    font-family: 'Overlock';
+}
+h2,h3,h4,h5{
+    font-family: 'Oregano';
+    font-size: 2em;
+}
+li,a,button{
+    font-family: 'Overlock';
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #000000;
+}
+/* HEADER */
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 2%;
+    flex-direction: row;
+    background-color: #BDD4E7;
+}
+
+.logo{
+    cursor: pointer;
+    height: 25vh;
+    margin-right: auto; /*Mover logo izquierda de todo.*/
+}
+.nav_links{
+    list-style-type: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #FF715B; /*Gris*/
+}
+
+button{
+    padding: 10px 10px;
+    background-color: #798793;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+button:hover{
+    background-color: #FF715B;
+}
+/*Estilos main*/
+main {
+    width: 100%;
+    margin: 0px auto 200px;
+    padding: 10px 0;
+    z-index: 0;
+    background: white;
+  }
+  main p {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin: 30px auto;
+    color: #000000;
+  }
+
+/*
+* * ESTILOS VÍDEO PRINCIPAL INDEX.
+* */
+.articuloVideoPrincipal{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.content{
+  max-width: 49rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+.viddeoDivGeneral{
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.videoIndex{
+  min-width: 100%;
+  min-height: 100%;
+}
+.overlay{
+  height: 80vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #303952;
+  z-index: 1;
+  opacity: 0.85;
+}
+.autoH1{
+  height: fit-content;
+  width: 60%;
+  position: absolute;
+  left: 0;
+  background-color: #FF715B;
+  z-index: 1;
+  opacity: .85 ;
+}
+/*Estilos de la sección burbujas.*/
+/*divBurbujas{
+  width: 100%;
+  color:;
+}*/
+
+/**
+* * Estilos de seccion top destinos.
+* */
+
+
+
+
+
+
+
+
+.max-width {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .clearfix::after,
+  .clearfix::before {
+    content: "";
+    display: table;
+  }
+  .clearfix::after {
+    clear: both;
+  }
+  #copy a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px dotted white;
+  }
+  #copy a:hover {
+    border-bottom: 3px dotted #4972b2;
+  }
+  .box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  main {
+    margin: 0px auto 200px;
+    padding: 10px 0;
+    z-index: 0;
+    background: white;
+  }
+  main p {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin: 30px auto;
+    color: #3c5e94;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    background: #BDD4E7;
+    height: 200px;
+  }
+  footer ul {
+    max-width: 300px;
+    width: 90%;
+    margin: 30px auto;
+  }
+  footer ul::after,
+  footer ul::before {
+    content: "";
+    display: table;
+  }
+  footer ul::after {
+    clear: both;
+  }
+  footer ul li {
+    float: left;
+    text-align: center;
+    width: 33.333%;
+  }
+  footer ul a {
+    color: white;
+  }
+  footer ul a i {
+    font-size: 3em;
+  }
+  footer ul a:hover {
+    color: #dbdbdb;
+    -webkit-text-shadow: 1px 1px 0 #000;
+    -moz-text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #000;
+  }
+  footer p {
+    font-size: 1.7em;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+  }

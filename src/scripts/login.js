@@ -1,9 +1,9 @@
 /**
  * Variables
  */
-const signupButton = document.getElementById('boton_registro'),
-    loginButton = document.getElementById('boton_login'),
-    userForms = document.getElementById('user_options-forms')
+const signupButton = document.getElementById('boton_registro');
+const loginButton = document.getElementById('boton_login');
+const userForms = document.getElementById('ambosFormularios');
 /**
 * Efectos de rebote
 */

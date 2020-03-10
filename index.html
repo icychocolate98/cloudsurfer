@@ -7,63 +7,120 @@
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
     <!--FAVICON-->
     <!--TODO añadir favicon-->
-    
     <link rel = "stylesheet" type="text/css" href="./src/styles/index.css">
-    <!--TODO añadir slider top destinos-->
-    <!--TODO añadir estilos burbujas.-->
-    <!--TODO añadir estilos burbujas.-->
-    
+    <link rel="stylesheet" type="text/css" href="./src/styles/fixed.css">
+    <!--TODO añadir burbujas.--> <!--TODO añadir slider top destinos--> 
+    <!-- Importar estilos bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/src/bootstrap-4.4.1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="/src/bootstrap-4.4.1-dist/css/bootstrap.min.css">
   </head>
   <body>
   <!--Header-->
-    <header>      
-      <img class="logo" src="./src/images/logo.png" alt="Cloudsurfer logo nav bar superior.">
+    <header>
+      <a class="logo"><img src="./src/images/logo.png" alt="Cloudsurfer logo nav bar superior."></img>
       <nav>
-            <ul class="nav_links">
-              <li>
-                <a href="#" class="">Home</a>
-              </li>
-              <li>
-                <a href="#" class="">Buscador</a>
-              </li>
-              <li>
-                <a href="#" class="">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="">Contacto</a>
-              </li>
-              <a class="login" href="login.html"><button>Entrar</button></a>
-            </ul>    
-      </nav>      
-    </header>
-    <main>
-      <article class="articuloVideoPrincipal content">
-      <!--Caja vídeo-->
-        <div class="videoDivGeneral"">
-          <video src="./src/video/video2.mp4" autoplay controls loop class="videoIndex" id= "backgroundVideoIndex" title="Vídeo introductorio index." alt="Video de introducción index.html"></video>                    
-        </div>        
-        <div class="overlay"></div>
-      <!-- Texto que se autoescribe por encima del vídeo.-->
-        <div class="videoContent">
-          <h2 id="autoH1"></h2>
+        <ul class="nav_links">
+          <li>
+            <a href="#" class="">Home</a>
+          </li>
+          <li>
+            <a href="#" class="">Buscador</a>
+          </li>
+          <li>
+            <a href="#" class="">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="">Contacto</a>
+          </li>
+          <a class="login" href="login.html"><button>Entrar</button></a>
+        </ul>    
+      </nav>
+    </header>   
+    <!--Caja vídeo general-->
+      <article class="articuloVideoPrincipal">        
+        <div>
+          <h1>
+            VIDEO
+          </h1>
         </div>
       </article>
+    <!--MAIN-->
+    <main>     
+      <!--Burbujas--> 
       <article>
-      <!--Burbujas-->
         <section class="burbujas">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+          <div class="divGeneralBurbujas">
+            <div class="burbuja">
+              <div class="infoBurbuja">
+                <div class="tituloBurbuja">
+                  <h2>ELIGE TU DESTINO</h2>
+                </div>
+                <div class="imagenBurbuja">
+                  <img src="/src/images/plane_find.jpg">
+                </div>
+                <div class="textoBurbuja">
+                  <p>Entre múltiples opciones, de una forma sencilla e intuitiva gracias a nuestro buscador.</p>
+                </div>
+              </div>
+            </div>
+            <div class="burbuja">
+              <div class="infoBurbuja">
+                <div class="tituloBurbuja">
+                  <h2>COMPARA</h2>
+                </div>
+                <div class="imagenBurbuja">
+                  <img src="/src/images/plane_find.jpg">
+                </div>
+                <div class="textoBurbuja">
+                  <p>Una vez escogido el destino, compara entre todas las opciones y elige la que más te guste.</p>
+                </div>
+              </div>
+            </div>
+            <div class="burbuja">
+              <div class="infoBurbuja">
+                <div class="tituloBurbuja">
+                  <h2>DESPEGA !</h2>
+                </div>
+                <div class="imagenBurbuja">
+                  <img src="src/images/despega.png">
+                </div>
+                <div class="textoBurbuja">
+                  <p>Con nuestras pasarelas de pago, podrás realizar pagos en un instante y de forma segura.</p>
+                </div>
+              </div>
+            </div>
+          </div>          
+        <!-- BOTON ENLACE AL BUSCADOR -->
+        <div class="divBotonBuscador">
+          <a class="botonAlbuscador" href="buscador.html">
+            <button>BUSCAR VUELOS</button>
+          </a>
+        </div>
         </section>
-      <!--Top destinos-->
+      </article>
+      <!--TOP DESTINOS STARTS-->
+      <article>
+        <hr>
         <section class="topDestinos">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+          <div class="tituloTopDestinos">
+            <h2>Lo más visitado este mes.</h2>
+          </div>
+          <div class="divGeneralTopDestinos">            
+            <div class="destino">
+              <img src="/src/images/logo.png">
+            </div>
+            <div class="destino">
+              
+            </div>
+            <div class="destino">
+              
+            </div>
+          </div>
         </section>
       </article>
     </main>
   <!--FOOTER-->
-  <footer>
+  <footer class="footerGeneral">
     <div class="footer_menu">
 
     </div>
@@ -84,23 +141,12 @@
         </li>
       </ul>
     </div>
-    <ul class="nav_links">
-      <li>
-        <a href="#" class=""><i></i></a>
-      </li>
-      <li>
-        <a href="#" class="">Buscador</a>
-      </li>
-      <li>
-        <a href="#" class="">Blog</a>
-      </li>
-      <li>
-        <a href="#" class="">Contacto</a>
-      </li>
-      <a class="login" href="login.html"><button>Entrar</button></a>
-    </ul>   
   </footer>
   <!--Enlazo script para mostrar texto automático por encima del vídeo.-->
-  <script href="/src/scripts/index.js"></script>
+    <script src="/src/scripts/index.js"></script>
+  <!--Enlazo scripts para jquery.-->
+    <script src="/src/js/*.min.js"></script>
+  <!--Enlazo scripts para boostrap.-->
+    <script src="/src/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

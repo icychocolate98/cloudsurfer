@@ -19,8 +19,9 @@
 }
 body{
     background-color: #ffffff;    
-    margin: 0;
     overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
 }
 /*Planeando tamaños de letras, títulos, etc*/
 h1{
@@ -29,6 +30,7 @@ h1{
 h2,h3,h4,h5{
     font-family: 'Oregano';
     font-size: 2em;
+    color: #FF715B;
 }
 li,a,button{
     font-family: 'Overlock';
@@ -39,19 +41,16 @@ li,a,button{
 /* HEADER */
 header {
     width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 2%;
-    flex-direction: row;
+    height: 10vh;
     background-color: #BDD4E7;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
 }
-
 .logo{
-    cursor: pointer;
-    height: 25vh;
-    margin-right: auto; /*Mover logo izquierda de todo.*/
+  cursor: pointer;
 }
 .nav_links{
     list-style-type: none;
@@ -69,7 +68,7 @@ header {
     color: #FF715B; /*Gris*/
 }
 
-button{
+header button{
     padding: 10px 10px;
     background-color: #798793;
     border: none;
@@ -77,169 +76,135 @@ button{
     cursor: pointer;
     transition: all 0.5s ease 0s;
 }
-
-button:hover{
+header button:hover{
     background-color: #FF715B;
+}
+.articuloVideoPrincipal{
+  height: 89.9vh;
+  width: 100%;
+  text-align: center;
+  background-color: salmon;
+}
+.videoDiv{
+  height: 80vh;
+  width: 100%;
+}
+
+.videoIndex{
+  position: fixed;
 }
 /*Estilos main*/
 main {
     width: 100%;
-    margin: 0px auto 200px;
-    padding: 10px 0;
-    z-index: 0;
     background: white;
-  }
-  main p {
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
-    margin: 30px auto;
-    color: #000000;
+    margin-bottom: 200px;
   }
 
-/*
-* * ESTILOS VÍDEO PRINCIPAL INDEX.
-* */
-.articuloVideoPrincipal{
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-.content{
-  max-width: 49rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: auto;
-  text-align: center;
-}
-.viddeoDivGeneral{
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-}
-.videoIndex{
-  min-width: 100%;
-  min-height: 100%;
-}
-.overlay{
-  height: 80vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #303952;
-  z-index: 1;
-  opacity: 0.85;
-}
-.autoH1{
-  height: fit-content;
-  width: 60%;
-  position: absolute;
-  left: 0;
-  background-color: #FF715B;
-  z-index: 1;
-  opacity: .85 ;
-}
-/*Estilos de la sección burbujas.*/
-/*divBurbujas{
-  width: 100%;
-  color:;
-}*/
-
-/**
-* * Estilos de seccion top destinos.
-* */
-
-
-
-
-
-
-
-
-.max-width {
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  .clearfix::after,
-  .clearfix::before {
-    content: "";
-    display: table;
-  }
-  .clearfix::after {
-    clear: both;
-  }
-  #copy a {
-    color: white;
-    text-decoration: none;
-    border-bottom: 3px dotted white;
-  }
-  #copy a:hover {
-    border-bottom: 3px dotted #4972b2;
-  }
-  .box-sizing {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  main {
-    margin: 0px auto 200px;
-    padding: 10px 0;
-    z-index: 0;
-    background: white;
-  }
-  main p {
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
-    margin: 30px auto;
-    color: #3c5e94;
-  }
-  footer {
+  main article {
     width: 100%;
-    position: fixed;
-    z-index: -1;
-    bottom: 0;
-    background: #BDD4E7;
-    height: 200px;
+    margin: 0 auto;
+    margin-top: 1%;
   }
-  footer ul {
-    max-width: 300px;
+  section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* SECCION BURBUJAS */
+  section.burbujas{
+    display: flex;
+    flex-direction: column; /* BURBUJAS + BOTÓN ESTÁN EN COLUMNA*/
+    margin: 0 auto;
+    width: 100%;
+    height: 65vh;
+  }
+  .divGeneralBurbujas{
+    background-color: #BDD4E7;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  section.burbujas img{
+    width: 50%;
+  }
+  .divBotonBuscador{
+    padding: 0.5%;
+  }
+  section.burbujas button{
+    background-color: #FF715B;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+  }
+  section.burbujas button:hover{
+    background-color: #BDD4E7;
+  }
+  .burbuja{
+    margin: 0 auto;
+    width: 29%;
+    text-align: center;
+    padding: 1%;
+  }
+  .burbuja p {
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* SECCION DESTINOS */
+  .topDestinos{
+    display: flex;
+    flex-direction: column; /* TITULO SLIDERS + DIV SLIDERS */
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5%;
+    margin: 1%;
+    height: 65vh;
+  }
+  .divGeneralTopDestinos{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .destino{
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+    padding: 1%;
+    height: 50vh;
+    border-radius: 20px;
+  }
+  .destino h2{
+    position: absolute;
+    margin-bottom: 10%;
+  }
+  .destino:first-child{ /* Algo más ancho que los otros 2.*/
+    background-color: red;
+    width: 40%;
+    /*background: url('/src/images/iconfinder_travel-world-air-plane-around_4638316.svg');*/
+  }
+  /* BOTÓN BUSCADOR*/
+  .divBotonBuscador{
+    margin: 0 auto;
+    margin-top: 0.5%;
+  }
+  /**
+  * * FOOTER  
+  * */
+  .footerGeneral{
+    display: flex;
     width: 90%;
-    margin: 30px auto;
-  }
-  footer ul::after,
-  footer ul::before {
-    content: "";
-    display: table;
-  }
-  footer ul::after {
-    clear: both;
-  }
-  footer ul li {
-    float: left;
-    text-align: center;
-    width: 33.333%;
-  }
-  footer ul a {
-    color: white;
-  }
-  footer ul a i {
-    font-size: 3em;
-  }
-  footer ul a:hover {
-    color: #dbdbdb;
-    -webkit-text-shadow: 1px 1px 0 #000;
-    -moz-text-shadow: 1px 1px 0 #000;
-    text-shadow: 1px 1px 0 #000;
-  }
-  footer p {
-    font-size: 1.7em;
-    color: white;
-    margin-top: 20px;
-    text-align: center;
+    height: 20vh;
+    background-color: seagreen;
   }

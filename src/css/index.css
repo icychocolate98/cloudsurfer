@@ -1,13 +1,13 @@
  /**
  * * FUENTES 
  * */
-@font-face { /*Primaria*/
+@font-face { /* Primaria */
     font-family: 'Overlock';
     src: url('../fonts/overlock/Overlock-Regular.ttf'),
      url('../fonts/overlock/Overlock-Bold.ttf'),
      url('../fonts/overlock/Overlock-Black.ttf');
 }
-@font-face {
+@font-face { /* Detalles o títulos ... */
     font-family: Oregano;
     src: url('../fonts/oregano/Oregano-Regular.ttf'),
     url('../fonts/oregano/Oregano-Italic.ttf');
@@ -38,7 +38,11 @@ li,a,button{
     font-weight: 500;
     color: #000000;
 }
-/* HEADER */
+p{
+  font-family: 'Overlock';
+  font-size: 16px;
+}
+/* NAV BAR SUPERIOR */
 nav{
   height: 15vh;
   background-color: #BDD4E7;
@@ -77,6 +81,16 @@ nav{
   color: #FF715B;
   font-size: 8rem;
 }
+
+/* Para que el poster ocupe todo el espacio... */
+video[poster]{
+  /* object-fit: fill; Fits video aspect's radio. */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
 /*Estilos main*/
 main {
     width: 100%;
@@ -103,8 +117,9 @@ main {
     display: flex;
     flex-direction: column; /* BURBUJAS + BOTÓN ESTÁN EN COLUMNA*/
     margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 100%;
-    height: 65vh;
   }
   .divGeneralBurbujas{
     background-color: #BDD4E7;

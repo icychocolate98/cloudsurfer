@@ -10,6 +10,7 @@
     <link rel = "stylesheet" type="text/css" href="./src/css/index.css">
     <link rel="stylesheet" type="text/css" href="./src/bootstrap-4.4.1-dist/css/bootstrap-grid.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./src/bootstrap-4.4.1-dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="./src/fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
     <link rel="icon" href="./src/images/logo.ico">
   </head>
   <body>
@@ -45,8 +46,8 @@
       <h1 id="autoH1"> Vuela. Disfruta. Vive.</h1>
       <video class="video" autoplay loop preload poster="./src/images/poster.png">
         <source src="./src/video/video2.mp4">
-          <source src="./src/video/video2.ogg">
-            <source src="./src/video/video2.mov">
+            <source src="./src/video/video2.mov">   
+            Imposible cargar el vídeo!           
       </video>
     </section>
     <!--MAIN-->
@@ -111,46 +112,73 @@
           </div>
           <div class="divGeneralTopDestinos">            
             <div class="destino">
-              <img src="./src/images/logo.png">
+              <h2 class="ciudad">Barcelona</h2>
+              <h2 class="precioDesde">Desde 100€</h2>
+              <a class="enlaceCiudad" href="#">Ver vuelos</a>
             </div>
-            <div class="destino">
-              <img src="./src/images/logo.png">
+            <div class="destino" onclick="">
+              <h2 class="ciudad">Londres</h2>
+              <h2 class="precioDesde">Desde 200€</h2>
+              <a class="enlaceCiudad" href="#">Ver vuelos</a>
             </div>
-            <div class="destino">
-              
+            <div class="destino" onclick="">
+              <h2 class="ciudad">París</h2>
+              <h2 class="precioDesde">Desde 50€</h2>
+              <a class="enlaceCiudad" href="#">Ver vuelos</a>
             </div>
-          </div>
         </section>
       </article>
     </main>
   <!--FOOTER-->
   <footer class="footerGeneral">
-    <div class="footer_menu">
-
-    </div>
-    <div class="footer_creador">
-
-    </div>
-    <div class="footer_contacto">
+    <div class="footer_seccion">
+      <h4>Menú principal</h4>
       <ul>
-      <!--Iconos RRSS-->
-        <li> <!--Facebook-->
-
+        <li>
+          <a href="#">HOME</a>
         </li>
-        <li> <!--Linkedin-->
-
+        <li>
+          <a href="./src/public/buscador.html">Buscador - No dejes escapar la oportunidad!</a>
         </li>
-        <li><!---->
-
+        <li>
+          <a href="./src/public/blog.html"> Blog - Comparte experiencias.</a>
         </li>
+        <li>
+          <a href="contacto.html" alt="Enlace dudas" name="enlaceAcontactoFooter">Contacto - Resuelve tus dudas.</a>
+        </li>        
       </ul>
     </div>
+    <span class="separador"></span>
+    <div class="footer_seccion">
+      <!--<h4><i class="fas fa-hashtag"></i>&nbsp;SÍGUENOS!&nbsp;<i class="fas fa-hashtag"></i></h4>-->
+      <ul id="rrss">
+        <!--Iconos RRSS-->
+        <li>
+          <a><i class="fab fa-facebook-f fa-2x"></i></a>
+        </li>
+        <li> <!--Linkedin-->
+          <a>
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a>
+            <a><i class="fab fa-instagram fa-2x"></i></a>
+          </a>
+        </li> 
+      </ul>
+    </div>
+    <span class="separador"></span>
+    <div class="footer_seccion">
+      <i class="fab fa-luggage fa-2x"></i>
+      <copyright>Proyecto DINW</copyright>
+      <author>Manuel González Castro</author>
+    </div>
   </footer>
-  <!--Enlazo script para mostrar texto automático por encima del vídeo.-->
+  <!-- SCRIPTS -->
     <script src="./src/scripts/index.js"></script>
-  <!--Enlazo scripts para jquery.-->
     <script src="./src/js/*.min.js"></script>
-  <!--Enlazo scripts para boostrap.-->
     <script src="./src/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/81462c207f.js"></script>
 </body>
 </html>

@@ -61,7 +61,22 @@ nav{
   text-decoration: none;
 }
 .nav-links li a:hover{
-  color: #000000;
+  color: #FF715B;
+  padding: 1%;
+  height: 100%;
+}
+.nav-links button{
+  border-radius: 10px;
+  background-color: grey;
+  color: #BDD4E7;
+  padding: 2%;
+  transition: 1s ease;
+}
+.nav-links button:hover{
+  background-color: #FF715B;
+  cursor: pointer;
+  padding: 2%;
+  transition: 1s ease;
 }
 .divIndexvideo{
   width: 100%;
@@ -79,7 +94,7 @@ nav{
   margin: 0 auto;
   margin-left: 5%;
   color: #FF715B;
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 /* Para que el poster ocupe todo el espacio... */
@@ -93,9 +108,10 @@ video[poster]{
 
 /*Estilos main*/
 main {
+    position: relative;
     width: 100%;
     background: white;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
   }
 
   main article {
@@ -158,54 +174,153 @@ main {
     width: 50%;
     margin: 0 auto;
   }
+  
+  /* BOTÓN BUSCADOR*/
+  .divBotonBuscador{
+    margin: 0 auto;
+    margin-top: 0.5%;
+  }
+
   /* SECCION DESTINOS */
   .topDestinos{
     display: flex;
     flex-direction: column; /* TITULO SLIDERS + DIV SLIDERS */
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     padding: 0.5%;
-    margin: 1%;
-    height: 65vh;
+    height: 60vh;
   }
   .divGeneralTopDestinos{
     width: 100%;
-    height: fit-content;
+    height: 45vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
   }
   .destino{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     width: 25%;
     text-align: center;
     padding: 1%;
-    height: 50vh;
+    height: 55vh;
     border-radius: 20px;
+    -webkit-box-shadow: 11px 38px 43px 1px rgba(189,212,231,1);
+    -moz-box-shadow: 11px 38px 43px 1px rgba(189,212,231,1);
+    box-shadow: 11px 38px 43px 1px rgba(189,212,231,1);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
   }
-  .destino h2{
-    position: absolute;
-    margin-bottom: 10%;
+
+  .destino:hover{
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    -o-transition: all .7s;
+    transition: all .7s;
   }
   .destino:first-child{ /* Algo más ancho que los otros 2.*/
-    background-color: red;
-    width: 40%;
-    /*background: url('/src/images/iconfinder_travel-world-air-plane-around_4638316.svg');*/
+    background-image: url('../images/barcelona.png');
+    background-position: center;
+    background-size: cover;
+    width: 40%; /* Hacemos el primero algo más ancho.*/
   }
-  /* BOTÓN BUSCADOR*/
-  .divBotonBuscador{
+  .destino:nth-child(2){ /* Algo más ancho que los otros 2.*/
+    background-image: url('../images/london.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .destino:nth-child(3){ /* Algo más ancho que los otros 2.*/
+    background-image: url('../images/paris.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .enlaceCiudad{
+      font-size: 35px;
+      color: #BDD4E7 !important;
+      font-family: 'Oregano';
+      margin: 0 auto;
+      height: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #ffffff 1s eas
+  }
+  .ciudad{
     margin: 0 auto;
-    margin-top: 0.5%;
+    position: relative;
+  }
+  .destino:hover{
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
   }
   /**
   * * FOOTER  
   * */
-  .footerGeneral{
+  footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height:250px; /*Mismo que el márgen del main para poder hacer el efecto parallax.*/
+    padding-left: 50px;
+    background: #BDD4E7;
+    color: #FF715B;
     display: flex;
-    width: 90%;
-    height: 20vh;
-    background-color: seagreen;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+  }
+  footer li a{
+    color: #000000;
+    text-decoration: none;
+    width: 30%;
+  }
+  footer li a:hover{
+    color: #FF715B;
+    padding: 1%;
+    height: 100%;
+    cursor: pointer;
+  }
+  footer button{
+    border-radius: 10px;
+    background-color: grey;
+    color: #BDD4E7;
+    padding: 1%;
+    transition: 1s ease;
+  }
+  footer button:hover{
+    background-color: #FF715B;
+    cursor: pointer;
+    padding: 2%;
+    transition: 1s ease;
+  }
+
+  .footer_seccion{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0 auto;
+  }
+  #rrss{
+    list-style: none;
+    padding: 5%;
+    margin: 0 auto;
+  }
+  .separador{
+    height: 20px;
+    width: 20px;
+    background-color: #FF715B;
+    border-radius: 50%;
+    position: relative;
   }
 
   /* SCROLLBAR */
@@ -227,32 +342,4 @@ main {
   }
   ::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(255,0,0,0.4); 
-  }
-  /**
-  * * MEDIA QUERIES 
-  * * */
-  @media screen and (max-width: 768px){
-    .divIndexvideo{
-      display: none;
-    }
-    .nav-links{
-      position: fixed;
-      background: #FF715B;
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(100px at 90% -10%); 
-      -webkit-clip-path: circle(750px at 90% -10%);
-      transition: all 1s ease-out;
-      pointer-events: none;
-    }
-    .nav-links.apertura{/* Cuando se abre ...*/
-      clip-path: circle(1000px at 90% -10%);
-      -webkit-clip-path: circle(1000px at 90% -10%);
-      pointer-events: all;
-    }
-
-    .main{
-      flex-direction: column;
-    }
   }

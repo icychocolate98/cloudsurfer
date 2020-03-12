@@ -1,0 +1,32 @@
+
+.articleBuscador{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.articleBuscador form{
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: black 5% 5% 5% 5%;
+}
+
+.destino{
+    height: 50px;
+    width: 20%;
+}
+
+#carouselPromociones{
+    overflow: hidden;
+    margin-left: auto;
+    width: 60%;
+}
+
+/* FORMULARIOS IDA - IDA/VUELTA */

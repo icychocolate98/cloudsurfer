@@ -18,7 +18,7 @@
   
   body {
     font-family: "Oregano";
-    font-size: 16px;
+    font-size: 1.1rem;
     line-height: 1em;
   }
   
@@ -44,7 +44,7 @@
     font-family: "Overlock";
     font-weight: 300;
     letter-spacing: 0.1rem;
-    color: rgb(207, 18, 18)131, 24, 24;
+    color: #FF715B;
   }
   
   /**
@@ -106,7 +106,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: rgba(34, 34, 34, 0.85); /*AZUL CLARITO*/
+    background-color: #BDD4E7; /*AZUL CLARITO*/
     border-radius: 3px;
   }
   
@@ -148,8 +148,8 @@
   }
   .registrado_opcion:hover,
   .noRegistrado_opcion:hover {
-    color: rgba(34, 34, 34, 0.85); /*AZUL CLARITO*/
-    background-color: #ccc;
+    color: #BDD4E7; /*AZUL CLARITO*/
+    background-color: #FF715B;
   }
   
   /**
@@ -161,7 +161,7 @@
     left: 30px;
     width: calc(50% - 30px);
     min-height: 420px;
-    background-color: #fff;
+    background-color: #212227;
     border-radius: 3px;
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
     overflow: hidden;
@@ -174,7 +174,7 @@
     font-weight: 500;
     line-height: 1em;
     text-transform: uppercase;
-    color: #e8716d;
+    color: #FF715B;
     letter-spacing: 0.1rem;
   }
   .divFormularios .campos_formulario:not(:last-of-type) {
@@ -187,12 +187,12 @@
     font-family: "Oregano", sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    color: gray;
+    color: #fff;
     letter-spacing: 0.1rem;
     transition: border-color 0.2s ease-in-out;
   }
   .divFormularios .campos_formulario-input:focus {
-    border-color: gray;
+    border-color: #212227;
   }
   .divFormularios .botones_formulario {
     display: flex;
@@ -203,15 +203,15 @@
   .divFormularios .botones_formulario-forgot {
     font-family: "Oregano", sans-serif;
     letter-spacing: 0.1rem;
-    color: #ccc;
+    color: #FF715B;
     text-decoration: underline;
     transition: color 0.2s ease-in-out;
   }
   .divFormularios .botones_formulario-forgot:hover {
-    color: #b3b3b3;
+    color: #FF715B;
   }
   .divFormularios .botones_formulario-action {
-    background-color: #e8716d; /* NARANJA */
+    background-color: #FF715B;
     border-radius: 3px;
     padding: 10px 35px;
     font-size: 1rem;
@@ -264,10 +264,10 @@
   .divFormularios.reboteDerecha {
     animation: reboteDerecha 1s forwards;
   }
-  
-  /**
-   * * A partir de 990 px camboiar disposición de los items.
-   * */
+
+  /** 
+  * * MEDIA QUERIES 
+  * */
   @media screen and (max-width: 990px) {
     .divFormularios {
       min-height: 350px;
@@ -309,4 +309,9 @@
     .noRegistrado {
       padding: 50px 45px;
     }
+  }
+
+  /* FORMATO MÓVIL */
+  @media screen and (max-width: 790px){
+    /*TODO Quitar efectos al cambiar entre login o registro para formato móvil.*/
   }

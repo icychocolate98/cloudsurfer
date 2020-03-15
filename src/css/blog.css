@@ -1,0 +1,111 @@
+img{
+    width: 100%;
+}
+main{
+    position: relative;
+    margin-bottom: 225px;
+}
+.blog{
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 20%;
+    border-left: 2px solid #FF715B;
+    border-right: 2px solid #FF715B;
+    border-radius: .8rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #BDD4E7 ;
+    padding: 1%;
+}
+article{
+    display: flex;
+    justify-content: flex-start;
+}
+article:nth-child(even){
+    justify-content: flex-end;
+}
+.post{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: #4C5454;
+    padding: 2%;
+    margin-bottom: 1.5%;
+}
+.post_imagen{
+    width: 100%;
+    position: relative;
+}
+
+.post_imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;    
+}
+.post_info{
+    display: flex;
+    flex-direction: column;
+}
+.post_fecha span{
+    display: block;
+    color: #BDD4E7;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+.post_titulo{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #FF715B;
+}
+.post_texto{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+}
+.post_leerMas{
+    width: 35%;
+    display: inline-block;
+    padding: 1%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background-color: #FF715B;
+    border-radius: .8rem;
+}
+a.post_leerMas{
+    text-decoration: none;
+}
+
+a.post_leerMas:hover{
+    color: #BDD4E7;
+}
+
+@media screen and (max-width: 868px){
+    .blog{
+        width: 90%;
+    }
+    .post{
+        font-size: 16px;
+        width: 100%;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;   
+    }
+    .post_info{
+        text-align: center;
+    }
+    .article{
+        width: 80%;
+        flex-direction: column;
+    }
+    footer{
+        max-height: 225px;
+    }
+}

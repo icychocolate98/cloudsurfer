@@ -22,6 +22,7 @@ body{
     overflow-x: hidden;
     margin: 0 auto;
     width: 100%;
+    z-index: 2;
 }
 /*Planeando tamaños de letras, títulos, etc*/
 h1{
@@ -46,17 +47,21 @@ p{
 nav{
   height: 15vh;
   background-color: #BDD4E7;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .nav-links{
   display: flex;
   list-style: none;
-  width: 50%;
+  width: 35%;
   height: 100%;
   justify-content: space-around;
   margin-left: auto;
   align-items: center;
 }
 .nav-links li a{
+  margin-right: 10%;
   color: #000000;
   text-decoration: none;
 }
@@ -86,10 +91,9 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.8;
+  opacity: 1;
 }
 .divIndexvideo h1{
-  z-index: 2;
   position: absolute;
   margin: 0 auto;
   margin-left: 5%;
@@ -103,15 +107,15 @@ video[poster]{
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /*Estilos main*/
 main {
-    position: relative;
     width: 100%;
     background: white;
-    margin-bottom: 250px;
+    margin-bottom: 450px;
+    z-index: 2;
   }
 
   main article {
@@ -133,8 +137,8 @@ main {
     display: flex;
     flex-direction: column; /* BURBUJAS + BOTÓN ESTÁN EN COLUMNA*/
     margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: -1%;
+    margin-bottom: 1%;
     width: 100%;
   }
   .divGeneralBurbujas{
@@ -263,7 +267,7 @@ main {
   * * FOOTER  
   * */
   footer{
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height:250px; /*Mismo que el márgen del main para poder hacer el efecto parallax.*/
@@ -276,6 +280,7 @@ main {
     justify-content: space-around;
     align-items: center;
     min-height: 150px;
+    z-index: -1;
   }
   footer li a{
     color: #000000;
@@ -323,6 +328,26 @@ main {
     position: relative;
   }
 
+  /* MOBILE */
+  @media only screen and (max-width: 650px){
+    nav{
+      height: 30vh;
+    }
+    main{
+      margin-top: 5%;
+    }
+    .nav-links{
+      margin: 0 auto;
+      flex-direction: column;
+      width: 20%;
+    }
+    .divIndexvideo{
+      display: none;
+    }
+    section.burbujas{
+      flex-direction: column;
+    }
+  }
   /* SCROLLBAR */
   ::-webkit-scrollbar {
     width: 10px;

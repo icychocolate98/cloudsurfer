@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Cloudsurfer - Contacto</title>
+    <meta charset="UTF-8">
+    <meta lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="../src/images/logo.ico"> <!-- FAVICON -->
+    <link href="../src/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/contact.css">
+  </head>
+  <body>
+  <!--Header-->
+    <nav class="navbar">
+      <!--<img src="../images/logo.png">-->
+      <ul class="nav-links">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="./buscador.html">Buscador</a>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contacto</a>
+        </li>
+        <li>
+          <a href="./login.html">
+            <button>Entrar</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--MAIN-->
+    <main>
+      <article>
+        <div class="formulario">
+          <h2>¿Tienes dudas? Envía tu duda con el siguiente formulario.</h2>
+          <div class="divSinMapa">
+            <div class="input-fields">
+              <input type="text" class="input" placeholder="Nombre">
+              <input type="text" class="input" placeholder="Dirección de correo">
+              <input type="text" class="input" placeholder="prefijo" id="inputPrefijo">
+              <input type="text" class="input" placeholder="Teléfono" id="inputTelefono">
+              <input type="text" class="input" placeholder="Tema">
+            </div>
+            <div class="duda">
+                <textarea name="textoDuda" id="textareaDuda" cols="20" rows="10" placeholder="Déjanos por aquí tu duda."></textarea>
+            </div>
+            <a>
+              <button id="enviarPregunta" name="submitPregunta" alt="Boton para enviar pregunta"> Enviar consulta.</button>
+            </a>
+          </div>
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.5033796539637!2d-7.8771241846664095!3d42.33179007918883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2ff932917ad993%3A0x5143d80e114ada98!2sC.I.F.P%20A%20Carballeira!5e0!3m2!1ses!2ses!4v1584053406597!5m2!1ses!2ses"width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+      </article>
+    </main>
+    <!--FOOTER-->
+    <footer class="footerGeneral">
+        <div class="footer_seccion">
+          <h4>Menú principal</h4>
+          <ul>
+            <li>
+              <a href="../../index.html">HOME</a>
+            </li>
+            <li>
+              <a href="../public/buscador.html">Buscador - No dejes escapar la oportunidad!</a>
+            </li>
+            <li>
+              <a href="../public/blog.html"> Blog - Comparte experiencias.</a>
+            </li>
+            <li>
+              <a href="contacto.html" alt="Enlace dudas" name="enlaceAcontactoFooter">Contacto - Resuelve tus dudas.</a>
+            </li>        
+          </ul>
+        </div>
+        <span class="separador"></span>
+        <div class="footer_seccion">
+          <!--<h4><i class="fas fa-hashtag"></i>&nbsp;SÍGUENOS!&nbsp;<i class="fas fa-hashtag"></i></h4>-->
+          <ul id="rrss">
+            <!--Iconos RRSS-->
+            <li>
+              <a><i class="fab fa-facebook-f fa-2x"></i></a>
+            </li>
+            <li> <!--Linkedin-->
+              <a>
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <a><i class="fab fa-instagram fa-2x"></i></a>
+              </a>
+            </li> 
+          </ul>
+        </div>
+        <span class="separador"></span>
+        <div class="footer_seccion">
+          <i class="fab fa-luggage fa-2x"></i>
+          <copyright>Proyecto DINW</copyright>
+          <author>Manuel González Castro</author>
+        </div>
+    </footer>
+</body>
+</html>

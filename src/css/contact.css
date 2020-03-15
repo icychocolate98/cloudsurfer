@@ -1,12 +1,97 @@
-.mapa{
-    position: relative;
-    height:0;
-    padding-bottom: 50%;
-}
 .mapa iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
+}
+article{ /*Overriding from index*/
+    margin-bottom: 500px;
+}
+button{
+    background-color: #FF715B;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+button:hover{
+    background-color: #BDD4E7;
+    color: #FF715B;
+}
+
+.divSinMapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #5d5d5d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FF715B;
+    height: 100vh;
+    padding-top: 2%;
+}
+.formulario h2{
+    margin: 0 auto;
+    width: 60%;
+}
+.input-fields{
+    margin: 0 auto;
+    margin: 1%;
+    width: 40%;
+    margin: 4%;
+}
+div.duda{
+    width: 25%;
+}
+.duda{
+    width: 95%;
+}
+.input-fields .input,
+.duda{
+    margin: 1%;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #BDD4E7;
+    padding: 10px;
+    color: #BDD4E7;
+}
+.duda{
+    border-left: 2px solid #BDD4E7;
+}
+::-webkit-input-placeholder{
+    color: #FF715B;
+}
+::-moz-input-placeholder{
+    color: #FF715B;
+}
+::-ms-input-placeholder{
+    color: #FF715B;
+}
+::-o-input-placeholder{
+    color: #FF715B;
+}
+textarea::-webkit-input-placeholder{
+    color: #FF715B;
+}
+/* Media queries */
+@media screen and (max-width: 790px){
+    .formulario{
+        width: 80%;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .divSinMapa{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

@@ -1,32 +1,33 @@
-
-.articleBuscador{
-    height: 80vh;
-    width: 100%;
+.btn:focus {
+    outline: 0;
+    box-shadow: none!important; 
+    background-color: #798793;
+}
+.btn {
+background-color: #BDD4E7;
+border: 3px solid #FF715B;
+}
+.mostrarVuelos{
+    background-color: #FF715B;
+    color: #000000;
+    border-radius: 10px;
+}
+.btn:nth-child(2){
+    margin-left: -5%;
+}
+main{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-content: center;
+}
+.carousel-item img{
+    width: 100%;
+}
+.formulario{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    background-color: red;
+    justify-content: space-between;
+    padding: 5%;
 }
-
-.articleBuscador form{
-    height: 400px;
-    width: 40%;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: black 5% 5% 5% 5%;
-}
-
-.destino{
-    height: 50px;
-    width: 20%;
-}
-
-#carouselPromociones{
-    overflow: hidden;
-    margin-left: auto;
-    width: 60%;
-}
-
-/* FORMULARIOS IDA - IDA/VUELTA */
